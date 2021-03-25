@@ -11,7 +11,6 @@
 ## specs: list containing specifications to later fit the model however the construct is defined below
 spec_mod <- function(mod, specs){
   mod_fitter <- function(data){
-    
     if(identical(mod, glm)){
       response <- specs$response
       mod_formula <- gen_formula(specs$response, specs$xvars, specs$xvars_pow, specs$interactions, specs$offsets)

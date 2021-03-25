@@ -8,7 +8,6 @@
 ## spec_recs: a list containing multiple un-prepped recipe specs
 ## spec_gen: a list containing general specifications that are common across all mod_fitters, and spec_recs
 build_mod <- function(data, mod_fitters, spec_recs, spec_gen){
-  
   source('tidy_models/src/deviance_tidy.R')
   source('tidy_models/src/gini_tidy.R')
   source('tidy_models/src/gen_formula.R')

@@ -5,7 +5,6 @@
 ## spec_recs: a list containing un-prepped recipe specs
 ## spec_gen: a list containing general specifications that are common across all mod_fitters, and spec_recs
 choose_spec <- function(data, mod_fitters, spec_recs, spec_gen){
-  
   if(length(mod_fitters) == 1){
     list(mod_fitter = mod_fitters[[1]], spec_rec = spec_recs[[1]])
   }else{
